@@ -487,10 +487,10 @@
       </a>
     </div>
     <div class="hero-stats">
-      <div class="stat"><div class="stat-num">3</div><div class="stat-label">AI Projects</div></div>
+      <div class="stat"><div class="stat-num">5</div><div class="stat-label">Featured Projects</div></div>
       <div class="stat"><div class="stat-num">120+</div><div class="stat-label">ML Data Points</div></div>
-      <div class="stat"><div class="stat-num">5+</div><div class="stat-label">Tech Stacks</div></div>
-      <div class="stat"><div class="stat-num">13+</div><div class="stat-label">GitHub Repos</div></div>
+      <div class="stat"><div class="stat-num">6+</div><div class="stat-label">Tech Stacks</div></div>
+      <div class="stat"><div class="stat-num">7</div><div class="stat-label">GitHub Repos</div></div>
     </div>
   </div>
 </section>
@@ -657,23 +657,79 @@
       </div>
       <div class="project-title">Smart Transportation AI</div>
       <div class="project-desc">
-        Real-time NYC traffic intelligence with interactive maps. A* route optimizer accounts for live congestion, 6 fleet vehicles move in real-time, and a NumPy time-series model predicts traffic across 20 intersections with 12-hour forecasts.
+        Real-time NYC traffic intelligence with interactive maps, plus a real computer-vision layer: YOLOv8 vehicle detection, OpenCV + EasyOCR license-plate reading, and a from-scratch multi-object tracker. A* route optimizer accounts for live congestion, 6 fleet vehicles move in real-time, and a NumPy time-series model predicts traffic across 20 intersections with 12-hour forecasts.
       </div>
       <div class="project-metric">
-        <div class="metric">Nodes: <strong>20 NYC</strong></div>
-        <div class="metric">Roads: <strong>42 edges</strong></div>
+        <div class="metric">Detection recall: <strong>0.80</strong></div>
+        <div class="metric">Plate OCR match: <strong>86.1%</strong></div>
         <div class="metric">Port: <strong>8002</strong></div>
       </div>
       <div class="project-tags">
-        <span class="tag tag-purple">A* Algorithm</span>
-        <span class="tag tag-cyan">Leaflet.js</span>
-        <span class="tag tag-green">FastAPI</span>
-        <span class="tag tag-orange">NumPy</span>
-        <span class="tag tag-yellow">Chart.js</span>
+        <span class="tag tag-purple">YOLOv8</span>
+        <span class="tag tag-cyan">OpenCV</span>
+        <span class="tag tag-green">A* Algorithm</span>
+        <span class="tag tag-orange">Leaflet.js</span>
+        <span class="tag tag-yellow">FastAPI</span>
       </div>
     </div>
 
-    <!-- Project 4 — Coming Soon -->
+    <!-- Project 4 -->
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div class="project-icon">📊</div>
+        <div class="project-links">
+          <a href="https://github.com/TharunCh-tch/llm-eval-harness" target="_blank" class="project-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.8 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 016 0C17 4.7 18 5 18 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.5-2.8 5.5-5.5 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg>
+            Code
+          </a>
+        </div>
+      </div>
+      <div class="project-title">LLM Eval Harness</div>
+      <div class="project-desc">
+        CLI + library for scoring and comparing LLM outputs: rubric-based and LLM-judge scoring, golden-patch/SWE-Bench-style correctness comparison with a sandboxed test runner, pairwise preference ranking via a from-scratch Bradley-Terry implementation, and inter-rater agreement metrics.
+      </div>
+      <div class="project-metric">
+        <div class="metric">Tests: <strong>84 passing</strong></div>
+        <div class="metric">Tasks: <strong>16 bundled</strong></div>
+        <div class="metric">Ranking: <strong>Bradley-Terry</strong></div>
+      </div>
+      <div class="project-tags">
+        <span class="tag tag-purple">LLM Evaluation</span>
+        <span class="tag tag-cyan">Bradley-Terry</span>
+        <span class="tag tag-green">Cohen's Kappa</span>
+        <span class="tag tag-orange">Python</span>
+      </div>
+    </div>
+
+    <!-- Project 5 -->
+    <div class="project-card reveal">
+      <div class="project-top">
+        <div class="project-icon">📦</div>
+        <div class="project-links">
+          <a href="https://github.com/TharunCh-tch/order-fulfillment-service" target="_blank" class="project-link">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .3a12 12 0 00-3.8 23.4c.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.6-1.4-1.4-1.8-1.4-1.8-1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.7-1.6-2.7-.3-5.5-1.3-5.5-5.8 0-1.3.5-2.4 1.2-3.2 0-.4-.5-1.5.2-3.2 0 0 1-.3 3.3 1.2a11.4 11.4 0 016 0C17 4.7 18 5 18 5c.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.5-2.8 5.5-5.5 5.8.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6A12 12 0 0012 .3"/></svg>
+            Code
+          </a>
+        </div>
+      </div>
+      <div class="project-title">Order Fulfillment Service</div>
+      <div class="project-desc">
+        Spring Boot 4 / Java 21 microservice: REST API for order lifecycle management, a real Kafka producer/consumer event flow, PostgreSQL persistence via Flyway migrations, and a full JUnit 5 + Mockito + Testcontainers test suite backed by CI.
+      </div>
+      <div class="project-metric">
+        <div class="metric">Tests: <strong>19 passing</strong></div>
+        <div class="metric">Java: <strong>21</strong></div>
+        <div class="metric">Spring Boot: <strong>4</strong></div>
+      </div>
+      <div class="project-tags">
+        <span class="tag tag-purple">Spring Boot</span>
+        <span class="tag tag-cyan">Kafka</span>
+        <span class="tag tag-green">PostgreSQL</span>
+        <span class="tag tag-orange">Docker</span>
+      </div>
+    </div>
+
+    <!-- Coming Soon -->
     <div class="project-card reveal" style="border-style: dashed; opacity: .6;">
       <div class="project-top">
         <div class="project-icon">⚡</div>
