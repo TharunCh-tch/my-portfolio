@@ -144,6 +144,11 @@
   .work-row:last-child{ border-bottom: 1px solid var(--border); }
   .work-status{ padding-top: 6px; }
   .work-status .dot{ width:9px; height:9px; border-radius:50%; background: var(--good); box-shadow: 0 0 0 3px var(--good-soft); }
+  .work-shot{
+    width:100%; aspect-ratio:16/9; object-fit:cover; object-position: top;
+    border:1px solid var(--border); background: var(--surface-2);
+    margin: 14px 0; display:block;
+  }
   .work-head{ display:flex; align-items:baseline; justify-content:space-between; gap: 16px; flex-wrap:wrap; }
   .work-title{ font-family: var(--font-display); font-weight:700; font-size: 19px; }
   .work-links{ display:flex; gap:14px; font-family: var(--font-mono); font-size:12px; }
@@ -311,6 +316,7 @@
             <a href="https://github.com/TharunCh-tch/enterprise-knowledge-assistant" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/enterprise-knowledge-assistant/main/docs/screenshots/query-result.jpg" alt="Enterprise Knowledge Assistant: a real query answered with retrieved source chunks and similarity scores">
         <div class="work-desc">RAG pipeline over uploaded documents — chunking, FAISS vector search (IndexFlatL2), HuggingFace sentence-transformer embeddings, FastAPI serving layer with a local flan-t5 generation step. Fully local, no external API calls.</div>
         <div class="work-metrics"><span><b>26</b> tests</span><span><b>MIT</b> license</span><span>CI: <b>passing</b></span></div>
         <div class="work-tags"><span>Python</span><span>LangChain</span><span>FAISS</span><span>sentence-transformers</span><span>FastAPI</span></div>
@@ -341,6 +347,7 @@
             <a href="https://github.com/TharunCh-tch/smart-transportation-ai" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/smart-transportation-ai/main/docs/screenshots/live-map.jpg" alt="Smart Transportation AI: live NYC traffic map with fleet vehicles and congestion-colored roads">
         <div class="work-desc">NYC traffic simulation (A* routing over 20 nodes, live map) plus a real computer-vision layer: YOLOv8 vehicle detection, OpenCV + EasyOCR license-plate reading, and a from-scratch centroid/IOU multi-object tracker. Every metric below is measured, with methodology and limitations documented in-repo.</div>
         <div class="work-metrics"><span><b>61</b> tests</span><span>Detection recall <b>0.80</b></span><span>Plate OCR match <b>86.1%</b></span></div>
         <div class="work-tags"><span>PyTorch</span><span>YOLOv8</span><span>OpenCV</span><span>FastAPI</span></div>
@@ -356,6 +363,7 @@
             <a href="https://github.com/TharunCh-tch/ai-music-discovery-platform" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/ai-music-discovery-platform/main/docs/screenshots/mood-search.png" alt="AI Music Discovery Platform: mood-based semantic search returning matching tracks">
         <div class="work-desc">React + TypeScript SPA on a FastAPI backend — JWT auth, PostgreSQL, mood-based semantic search via sentence-transformers, and both content-based and collaborative (item-based CF + matrix factorization) recommendation engines.</div>
         <div class="work-metrics"><span><b>56</b> tests (35 backend + 21 frontend)</span><span>CI: <b>passing</b></span></div>
         <div class="work-tags"><span>React</span><span>TypeScript</span><span>FastAPI</span><span>PostgreSQL</span><span>JWT</span></div>
@@ -371,6 +379,7 @@
             <a href="https://github.com/TharunCh-tch/order-fulfillment-service" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/order-fulfillment-service/main/docs/screenshots/01-swagger-ui-overview.jpg" alt="Order Fulfillment Service: browsable Swagger UI listing the REST API endpoints">
         <div class="work-desc">Spring Boot 4 / Java 21 microservice: REST API for order lifecycle management, a real Kafka producer/consumer event flow, PostgreSQL persistence via Flyway migrations, and a JUnit 5 + Mockito + Testcontainers suite verified against real Postgres and Kafka containers in CI.</div>
         <div class="work-metrics"><span><b>19</b> tests</span><span>Java <b>21</b></span><span>Spring Boot <b>4</b></span></div>
         <div class="work-tags"><span>Java</span><span>Spring Boot</span><span>Kafka</span><span>PostgreSQL</span><span>Docker</span></div>
@@ -386,6 +395,7 @@
             <a href="https://github.com/TharunCh-tch/asl-detection" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/asl-detection/main/docs/screenshots/streamlit-prediction-B.jpg" alt="ASL Detection: a real prediction of the letter B at 99.8% confidence">
         <div class="work-desc">Real-time American Sign Language recognition — MediaPipe hand-landmark extraction feeding a lightweight PyTorch MLP, a deliberately more CPU/latency-friendly choice than a raw-pixel CNN. Trained on 10,873 real images across the ASL alphabet. Flask API + Streamlit UI for image and (untested-live) webcam inference.</div>
         <div class="work-metrics"><span><b>23</b> tests</span><span>Test accuracy <b>91.8%</b></span><span>CI: <b>passing</b></span></div>
         <div class="work-tags"><span>PyTorch</span><span>MediaPipe</span><span>OpenCV</span><span>Flask</span><span>Streamlit</span></div>
@@ -401,6 +411,7 @@
             <a href="https://github.com/TharunCh-tch/community-cafe" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/community-cafe/main/docs/screenshots/marketplace.jpg" alt="Community Cafe: the marketplace listing with category filters and seeded products">
         <div class="work-desc">Neighborhood community platform — marketplace with cart/checkout, Razorpay payments, supplier onboarding, visitor management, amenity booking. A solo modernized rebuild of a 3-person team project from undergrad (2022) — this version fixes the original's SQL-injection and weak password-hashing issues for real, with regression tests proving both.</div>
         <div class="work-metrics"><span><b>24</b> tests</span><span><b>58</b> assertions</span><span>CI: <b>passing</b></span></div>
         <div class="work-tags"><span>PHP</span><span>MySQL</span><span>Razorpay</span><span>PHPUnit</span></div>
@@ -416,6 +427,7 @@
             <a href="https://github.com/TharunCh-tch/emergency-vehicle-cnn" target="_blank" rel="noopener">code →</a>
           </div>
         </div>
+        <img class="work-shot" loading="lazy" src="https://raw.githubusercontent.com/TharunCh-tch/emergency-vehicle-cnn/main/results/gradcam/gradcam_00_true-emergency_pred-emergency.jpg" alt="Emergency Vehicle CNN: Grad-CAM heatmap overlay on a correctly classified emergency vehicle">
         <div class="work-desc">4-layer CNN built from scratch in PyTorch (no pretrained backbone) to classify road-scene images as emergency vs. non-emergency vehicles — a from-scratch rebuild of Buffalo coursework, trained end-to-end on CPU on a small, self-assembled, class-balanced dataset. Grad-CAM visualizations included. Reports real precision/recall/F1/ROC-AUC and an honest account of small-dataset overfitting rather than an inflated headline number.</div>
         <div class="work-metrics"><span>Test accuracy <b>57.8%</b></span><span>ROC-AUC <b>0.65</b></span><span><b>22</b> tests</span></div>
         <div class="work-tags"><span>PyTorch</span><span>CNN</span><span>Grad-CAM</span></div>
